@@ -1,6 +1,7 @@
 import { AppShell, Avatar, Button, Divider, Group, MantineProvider, NavLink, Stack, Text, Title } from "@mantine/core";
 import "@mantine/core/styles.css";
 import { theme } from "./theme";
+import MainContent from "./components/appshell/MainContent";
 
 const defaultPadding = "md";
 
@@ -13,13 +14,13 @@ const NavMenu = () => {
       <NavLink label="Projects">
         <NavLink label="Ai Tools" />
         <NavLink label="SignPlan" />
-
       </NavLink>
-
       <NavLink label="Contact" />
     </Stack>
   );
 }
+
+
 
 const AppLayout = () => {
   return (
@@ -39,6 +40,7 @@ const AppLayout = () => {
           <Button>
             A Button
           </Button>
+          < MainContent />
         </Stack>
       </AppShell.Main>
       <AppShell.Footer>
